@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Dropdown</h2>
+                                       
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown 
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a id="red" onclick="redColour()" href="#">RED</a></li>
+      <li><a id="yellow" onclick="yellowColour()" href="#">YELLOW</a></li>
+      <li><a id="blue"  onclick="blueColour()" href="#">BLUE</a></li>
+      
+    </ul>
+  </div>
+</div>
+<script>
+    function redColour()
+    {
+        document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
+    }
+    function yellowColour()
+    {
+        document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+    }
+    function blueColour()
+    {
+        document.getElementsByTagName("BODY")[0].style.backgroundColor = "blue";
+    }
+</script>
+
+</body>
+</html>

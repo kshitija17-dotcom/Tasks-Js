@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+	
+	
+	
+</head>
+
+<body>
+	<div id="GFG">
+		<form id="form"  action="#">
+			FirstName :<input type="text" id="Firstname" placeholder="FirstName">
+		</br>
+			LastName :<input type="text" id="Lastname" placeholder="LastName">
+		</form>
+
+		<button onclick="submitBtn()">Submit</button>
+	</div>
+
+	<div id="output"></div>
+	<script>
+		function submitBtn(){
+
+		var Firstname=document.getElementById("Firstname").value	
+		document.getElementById("Firstname").innerHTML= "FirstName   :"  +Firstname
+		console.log(Firstname)
+
+		var Lastname=document.getElementById("Lastname").value		
+		// document.getElementById("Lastname").innerHTML="LastName   :"  +Lastname
+		// })
+      
+        // $(document).ready(function() {
+		// 	$("button").click(function() {
+		// 		var x = $("form").serializeArray();
+		// 		$.each(x, function(i, field) {
+		// 			$("#output").append("WELCOME "
+		// 					+ field.value + " ");
+		// 		});
+		// 	});
+		// });
+		}
+	</script>
+	
+</body>
+
+</html>

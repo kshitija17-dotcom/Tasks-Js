@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="demo" onclick="additionOfTwoNumbers()" type="button" class="btn btn-danger">PERFORM ADDITION</button>
+    <button id="demo" onclick="substractionOfTwoNumbers()" type="button" class="btn btn-danger">PERFORM SUBSTRACTION</button>
+    <p id="demo"></p>
+    <script>
+        function additionOfTwoNumbers()
+        {
+            let result=myCalculator(10,10)
+        displayResult(result)
+       function myCalculator(num1,num2)
+       {
+        return num1+num2
+       }
+       function displayResult(answer){
+        document.getElementById("demo").innerHTML=' <h2> Answer is : </h2> ' +answer; 
+       }
+        }
+        function substractionOfTwoNumbers()
+        {
+            let result=myCalculator(20,10)
+        displayResult(result)
+       function myCalculator(num1,num2)
+       {
+        return num1-num2
+       }
+       function displayResult(answer){
+        document.getElementById("demo").innerHTML=' <h2> Answer is : </h2> ' +answer; 
+       }
+        }
+
+    </script>
+</body>
+</html>
